@@ -1,0 +1,14 @@
+# Robots.txt for CS2 Boost
+User-agent: *
+Allow: /
+
+# Disallow private/admin areas
+Disallow: /dashboard/
+Disallow: /booster/
+Disallow: /admin/
+Disallow: /api/
+Disallow: /login
+Disallow: /register
+
+# Sitemap
+Sitemap: https://cs2boost.com/sitemap.xml

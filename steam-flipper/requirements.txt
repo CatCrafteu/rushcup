@@ -1,0 +1,6 @@
+steam==1.5.0
+steamwebapi==1.0.5
+requests==2.31.0
+python-telegram-bot==20.7
+apscheduler==3.10.4
+colorama==0.4.6

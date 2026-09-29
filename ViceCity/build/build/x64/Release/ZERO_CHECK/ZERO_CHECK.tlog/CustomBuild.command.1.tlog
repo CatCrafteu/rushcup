@@ -1,0 +1,10 @@
+^C:\USERS\KAVI\DOCUMENTS\DEFAULT PROJECT\VICECITY\BUILD\BUILD\CMAKEFILES\DF85E63300220DCF48EB494AC65870C3\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Kavi/Documents/Default Project/ViceCity" "-BC:/Users/Kavi/Documents/Default Project/ViceCity/build/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Kavi/Documents/Default Project/ViceCity/build/build/ViceCity.slnx"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

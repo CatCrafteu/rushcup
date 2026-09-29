@@ -1,0 +1,8 @@
+{
+    "steamPath": "",
+    "cs2AppId": "730",
+    "dllName": "ViceCity.dll",
+    "windowTitle": "ViceCity Launcher",
+    "autoClose": true,
+    "injectDelay": 3000
+}

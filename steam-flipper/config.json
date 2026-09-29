@@ -1,0 +1,31 @@
+{
+  "steam": {
+    "username": "YOUR_STEAM_USERNAME",
+    "password": "YOUR_STEAM_PASSWORD",
+    "shared_secret": "YOUR_SHARED_SECRET_FOR_2FA",
+    "identity_secret": "YOUR_IDENTITY_SECRET_FOR_CONFIRMATIONS",
+    "api_key": "YOUR_STEAM_API_KEY"
+  },
+  "telegram": {
+    "bot_token": "8992360297:AAHGLE3ElRHd2o5aSPzdkJDLm4V7D9VRkIc",
+    "chat_id": "YOUR_TELEGRAM_CHAT_ID"
+  },
+  "settings": {
+    "min_profit_percent": 5.0,
+    "max_buy_price": 50.0,
+    "min_buy_price": 0.03,
+    "max_daily_spend": 100.0,
+    "max_concurrent_listings": 50,
+    "scan_interval_seconds": 300,
+    "request_delay_seconds": 8,
+    "buy_order_duration_days": 1,
+    "sell_price_undercut_percent": 1.0
+  },
+  "filters": {
+    "item_types": ["Case", "Case Key", "Sticker", "Skin", "Container", "Tag_Item_Case"],
+    "excluded_apps": [730],
+    "included_apps": [730],
+    "rarity_exclude": ["Contraband", "Extraordinary"],
+    "min_volume_24h": 10
+  }
+}

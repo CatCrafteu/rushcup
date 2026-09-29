@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Solution>
+	<Configurations>
+		<BuildType Name="Release"/>
+		<BuildType Name="Debug"/>
+		<Platform Name="x64"/>
+	</Configurations>
+	<Project Path="ALL_BUILD.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="dd041d6b-3b09-350a-86ae-0be5570134c5" DefaultStartup="true">
+		<BuildDependency Project="ViceCity.vcxproj"/>
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="vendor/fmt/fmt.vcxproj"/>
+		<BuildDependency Project="vendor/imgui/imgui.vcxproj"/>
+		<BuildDependency Project="vendor/lua/lua.vcxproj"/>
+		<BuildDependency Project="vendor/minhook/minhook.vcxproj"/>
+	</Project>
+	<Project Path="INSTALL.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="3dc0201c-9997-3350-b59e-ec3b85e8db03">
+		<BuildDependency Project="ALL_BUILD.vcxproj"/>
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="Debug|*" Project="false"/>
+	</Project>
+	<Project Path="PACKAGE.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="c72fc605-20ec-353f-959d-453ed83c1481">
+		<BuildDependency Project="ALL_BUILD.vcxproj"/>
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="Debug|*" Project="false"/>
+	</Project>
+	<Project Path="ViceCity.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="da385e57-dbee-3a9b-b1d9-f00f25d8a2dd">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="vendor/fmt/fmt.vcxproj"/>
+		<BuildDependency Project="vendor/imgui/imgui.vcxproj"/>
+		<BuildDependency Project="vendor/lua/lua.vcxproj"/>
+		<BuildDependency Project="vendor/minhook/minhook.vcxproj"/>
+	</Project>
+	<Project Path="ViceCity_Clean.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="5dd44be0-9fab-3be6-9382-642cedfa0899">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="Debug|*" Project="false"/>
+	</Project>
+	<Project Path="ZERO_CHECK.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="e8b8c37c-241c-34aa-bba3-3595cc7dad00"/>
+	<Project Path="vendor/fmt/fmt.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="43d4bb2c-6ec4-3347-a594-7dda496a8cbe">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="vendor/imgui/imgui.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="67c26e81-1fdb-32a5-b7ac-f0bf4e425327">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="vendor/lua/lua.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="412e198e-d557-31eb-929f-fe71da28a2d9">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="vendor/minhook/minhook.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="029c44b7-12ed-3d6b-b859-122f9c216f03">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+</Solution>
